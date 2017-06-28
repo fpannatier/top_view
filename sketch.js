@@ -1,4 +1,4 @@
-var h = 17;
+//var h = 17;
 
 function setup() {
   createCanvas(600,600);
@@ -6,12 +6,11 @@ function setup() {
 
 }
 
-function raster() {
+function raster(h) {
 
-  fill(0 ,178,162,90);
-  noStroke();
+  //fill(0 ,178,162,90);
+  //noStroke();
   //var h = map(mouseX, 0, width, 0,18);
-
 
   push();
   rotate(0);
@@ -38,8 +37,10 @@ function raster() {
 
 function draw() {
   background(255);
-  raster();
 
-
-
+  fill(0 ,178,162,80);
+  noStroke();
+  for(var h=17; h>=0; h--){
+    raster(h);
+  }
 }
